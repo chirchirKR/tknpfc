@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b6623;
+  color: white;
+  text-align: ;
+}
+
+/* Pitch */
+.pitch {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
+  margin: auto;
+  background: #1e8f3f;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+/* Player dots */
+.player {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background:;
+  border-radius: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Positions */
+.gk { top: 85%; left: 45%; background: ;}
+
+.df:nth-child(2) { top: 65%; left: 10%; background: ; color: ;}
+.df:nth-child(3) { top: 65%; left: 30%; background: ; color: ;}
+.df:nth-child(4) { top: 65%; left: 55%; background: ; color: ;}
+.df:nth-child(5) { top: 65%; left: 75%; background: ; color: ;}
+
+.mf:nth-child(6) { top: 40%; left: 20%; background: ; color: ;}
+.mf:nth-child(7) { top: 40%; left: 45%; background: ; color: ; }
+.mf:nth-child(8) { top: 40%; left: 70%; background: ; color: ;}
+
+.fw:nth-child(9)  { top: 15%; left: 25%; background: ; color: ;}
+.fw:nth-child(10) { top: 15%; left: 45%; background: ;}
+.fw:nth-child(11) { top: 15%; left: 65%; background: ; color: ;}
+
+/* Squad cards */
+.squad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.carder {
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title- {
+  color:  white;
+  padding: 15px;
+}
+.title-- {
+  color: ;
+}
+
+.play-carder {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgba(56,56,56,46%);
+  display: inline-block;
+}
+.play-carder > img {
+  height: 120px;
+  border-radius:;
+  width: 120px;
+  visibility: collapse;
+  display: none;
+  justify-self: center;
+  object-fit: cover;
+  object-position: top center;
+  
+}
+.hashtag {
+  font-size: 2.7rem;
+  font-weight: 1000;
+  color: orangered;
+  margin-top: ;
+}
+
+.firstName {
+  text-align: ;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: ;
+}
+.secName {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 1.9rem;
+  color:;
+}
+.firstName, .secName {
+  color: silver;
+}
+.show-listof {
+  display: flex;
+  overflow-x:  scroll;
+}
+.coach {
+  font-size: 1.5rem;
+  color: orangered;
+}
+.coach-name {
+  font-size: 1.8rem;
+}
+
+{
+  background-image: url('https://files.catbox.moe/5gsnkb.jpg');
+  background-position: top center;
+  
+}

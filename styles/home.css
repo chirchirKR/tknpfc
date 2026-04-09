@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'gravita';
+  src: url('../res/fonts/GravitasOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../res/fonts/Oswald-VariableFont_wght.ttf');
+}
+
+.welcome-icon-banner {
+  background-image: url('../res/imgs/team.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome-msg h1 {
+  font-family: 'gravita';
+  color: white;
+  font-size: 4rem;
+}
+
+.welcome-msg {
+  padding: 12vh 10%;
+  background-color: rgba(12,12,12,66%)
+}
+
+.welcome-msg p {
+  font-size: 1.6rem;
+  color: greenyellow;
+}
+
+.news-section {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.news-section > div {
+  display: flex;
+  gap: 15px;
+  padding: 10px 4px;
+}
+
+.news-section > div img , .news-section > div video{
+  border-radius: 5px;
+  height: 10vh;
+  width: 30%;
+  border: none;
+  background: linear-gradient(105deg,lightgrey);
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.news-board > div > h4 {
+  font-size: 1.4rem;
+  color: #131f32;
+  padding: 10px 0;
+}
+
+.p-stadium, .p-dated {
+  color: grey;
+  font-size: 1rem;
+  padding: 8px 3px;
+}
+
+.more-button {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.more-button > button {
+  padding: 9px;
+  border: 0.7px solid grey;
+  font-size: 1.3rem;
+}
+
+.latest-fix {
+  border: 1px solid grey;
+  border-top: 4px solid maroon;
+  margin: 14px;
+}
+.top-fix, .team-name-fix {
+  width: 100%;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+}
+.next-fix, .all-fix {
+  width: 48%;
+  text-align: left;
+  color: grey;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+.all-fix {
+  text-align: right;
+  color: #131f32;
+  text-decoration: underline;
+}
+.mid-fix {
+  text-align: center;
+  padding: 10px;
+}
+.dated-fix {
+  padding: 8px 0;
+  font-size: 1.4rem;
+  color: #123;
+  font-family: "Arial", sans-serif;
+  font-weight: 1000;
+  
+}
+.league-fix {
+  padding: 4px 0;
+  font-size: 1.0em;
+  color: grey;
+}
+.bottom-fix {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.bottom-fix img , .time-fix{
+  height: 12vh;
+  width: 30%;
+  height: inherit;
+  background-color: lightgray;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.time-fix {
+  border-radius: 10px;
+  background-color: transparent;
+  color: #131d24;
+  font-family: "Arial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 1000;
+  height: 90%;
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.team-name-fix {
+  padding: 15px 10px;
+}
+.team-home-fix, .team-away-fix {
+  font-size: 1.4rem;
+  width: 50%;
+  text-align: center;
+  padding-right: 10%;
+}
+
+.team-away-fix {
+  padding-left: 15%;
+  padding-right: 10px;
+}
+
+.team-name-res {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.team-score {
+  color: orange;
+  background: #131f32;
+  padding: 13px;
+  margin: 2px 7px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.fixnres-section {
+  padding: 10px 5px;
+}
+

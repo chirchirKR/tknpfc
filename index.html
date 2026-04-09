@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Kepo FC • Home</title>
+  <meta charset="utf-8"/>
+  <meta name="author" content="kym tye"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <link rel="stylesheet" href="./styles/home.css"/>
+  <script type="text/javascript" src="./scripts/script.js"></script>
+  <script type="text/javascript" src="./datas/news.js"></script>
+  <!--script type="text/javascript" src="./scripts/_news.js"></script-->
+  <script type="text/javascript" src="./datas/fixtures.js"></script>
+  <!--script type="text/javascript" src="./scripts/_fixs.js"></script-->
+  <script type="text/javascript" src="./datas/results.js"></script>
+  <!--script type="text/javascript" src="./scripts/_res.js"></script-->
+  <script>
+  </script>
+</head>
+<body>
+  <section class="top-header">
+    <div class="menu-icon" onclick="showMenu()"></div>
+    <div>
+      <h1>KERICHO POLY FC</h1>
+    </div>
+  </section>
+  <section class="drop-down">
+    <div class="drop-down-list">
+      <p onclick="locateMe(this.innerText,'./')">Home</p>
+      <p onclick="locateMe(this.innerText,'./')">News</p>
+      <p onclick="locateMe(this.innerText,'./')">Fixtures</p>
+      <p onclick="locateMe(this.innerText,'./')">Results</p>
+      <p onclick="locateMe(this.innerText,'./')">Players</p>
+      <p onclick="locateMe(this.innerText,'./')">Market</p>
+      <p onclick="locateMe(this.innerText,'./')">About</p>
+      <!--p onclick="locateMe(this.innerText,'./')">Contacts</p-->
+    </div>
+  </section>
+  
+  <section class="welcome-icon-banner">
+    <div class="welcome-msg">
+      <h1>KERICHO POLY <br>SNIPERS  FC</h1>
+      <p>Legendry Kepo</p>
+    </div>
+  </section>
+  
+  <section class="news-section card"  id="newField">
+    
+    <!--h2 class="title-">NEWS</h2>
+    <div class="news-board">
+      <img alt=""/>
+      <div>
+        <h4>What a tremendous late win victory over Shabana FC</h4>
+        <p><span class="p-stadium">Gusii Stadium</span>~<span class="p-dated">26 January 2025 - 11 : 00 AM</span></p>
+      </div>
+    </div>
+    <hr class="sep-news">
+    <div class="more-button">
+      <button>MORE NEWS &gt;&gt;</button>
+    </div-->
+  </section>
+  
+  <section class="fixnres-section card">
+    <h2 class="title-">FIXTURES & RESULTS</h2>
+    <section class="latest-fix" id="showNewFix">
+      <!--div class="top-fix">
+        <p class="next-fix">Next fixture</p><p class="all-fix">All Fixtures &gt;&gt;</p>
+      </div>
+      <div class="mid-fix">
+        <p class="dated-fix">Thursday 17 January 2026</p>
+        <p class="league-fix">Kenya Premier League</p>
+      </div>
+      <div class="bottom-fix">
+        <img alt="" src=""/>
+        <div class="time-fix">14:00<br>E.A.T</div>
+        <img alt="" src=""/>
+      </div>
+      <div class="team-name-fix">
+        <p class="team-home-fix">Manchester City</p>
+        <p class="team-away-fix">Manchester United</p>
+      </div-->
+    </section>
+    <section class="latest-fix" id="resField">
+      <!--div class="top-fix">
+        <p class="next-fix">Latest Result</p><p class="all-fix">All Fixtures &gt;&gt;</p>
+      </div>
+      <div class="mid-fix">
+        <p class="dated-fix">Thursday 17 January 2026</p>
+        <p class="league-fix">Kenya Premier League</p>
+      </div>    
+      <div class="team-name-fix">
+        <p class="team-name-res">Manchester City</p>
+        <p class="team-score">99</p>
+        <p class="team-score">0</p>
+        <p class="team-name-res">Manchester United</p>
+      </div-->
+    </section>
+  </section>
+<section class="image-section">
+  
+    <!-- Mozzart Advert Overlay -->
+    <div class="advert-overlay active" id="advert">
+        <div class="logo"><img height="30" width="30" src="" onerror="this.style.display='none'"/>TKNP</div>
+        <!--div class="spinner"></div-->
+        <div class="loading">Sponsored By THE KERICHO NATIONAL POLYTECHNIC</div>
+    </div>
+
+</section>
+  
+  <section class="footer-sec">
+    <!--h1>About</h1>
+    <h2>Contact Us</h2-->
+    <h2 onclick="locateMe('about','./')">About</h2>
+    <h2 onclick="locateMe('news','./')">More News</h2>
+    <h2 onclick="locateMe('results','./')">Results</h2>
+    <h2 onclick="locateMe('fixtures','./')">Fixtures</h2>
+    <h2 onclick="locateMe('players','./')">Explore Our Team</h2>
+    <h2 onclick="locateMe('market','./')">Market</h2>
+    <!--hr>
+    <hr>
+    <div class="nav-list">
+      <img src="./res/icons/fb.png" onclick="href('https://www.facebook.com/apsbometfc')"><img src="./res/icons/ig.png" onclick="href('https://www.instagram.com/a.p.sbometfc?igsh=MXNkeDd5eWpqZjhreg==')"/>
+    </div-->
+    <hr>
+    <p>&copy; 2026 • All Rights Reserved </p>
+    
+  </section>
+  <script>
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  function reqDate(param=null,stamp="true") {
+    if (!param) return 0;
+    
+    let sd = new Date(param); // Set Date
+    let tstamp = sd.getTime();
+    if (stamp == "false") {
+        let date = sd.getDate();
+        let month = months[sd.getMonth()];
+        let day = days[sd.getDay()];
+        let year = sd.getFullYear();
+       return `${day.slice(0,3)} ${date} ${month.slice(0,3)} ${year}`; 
+    }
+    else if (stamp == "tstamp") {
+        return tstamp;
+    }
+    else {
+        h = sd.getHours() - 3;
+        m = sd.getMinutes();
+        return h+':'+m;
+    }
+}
+function showNew_(n=[]) {
+    let edit = ['<h2 class="title-">NEWS</h2>'];
+    let field = document.getElementById('newField');
+    if (n.length < 1) return;
+    if (n.length < 4) {
+        n.forEach(function (item) {
+            let url = item["photo"];
+            //console.log(url)
+            edit.push(`
+            <div class="news-board" onclick="window.location.href = './news/index.html'">
+            <img src="${(url.startsWith('/res/'))? '.'+url : url }"/><div>
+            <h4>${item['title']}</h4>
+            <p><span class="p-stadium">${item['stadium']}</span>~<span class="p-dated">${reqDate(item['date'], "false")} ${reqDate(item['date'],"0")}</span></p>
+            </div></div>
+            <hr class="sep-news">`);
+        });
+        edit.push(`<div class="more-button">
+            <button onclick="window.location.href = './news/index.html'">MORE NEWS &gt;&gt;</button>
+            </div>`);
+        field.innerHTML = edit.join('\n');
+        return;
+    }
+}
+function showNextFixture(fixs=[]) {
+    if (fixs.length < 1) {
+        //alert();
+        let edit = `  <section class="reminder">
+        <p>× No Fixture For Now</p></section>`;
+        let showNewFix = document.getElementById('showNewFix');
+        showNewFix.innerHTML = edit;
+        return;
+    }
+    
+    let tstamp = [];
+    fixs.forEach((item) => {
+        if(Date.now() < new Date(item["date"]).getTime()) {
+            let [hr, min] = item["time"].trim().split(':');
+            hr = +hr * 3600000;
+            min = +min * 60000;
+            tstamp.push(reqDate(item["date"], "tstamp") + hr + min);
+        }
+    });
+    //console.log(tstamp);
+    tstamp = tstamp.sort((a,b) => {a+b});
+    /*console.log(tstamp);
+    console.log(Date.now());*/
+    let fix_ = {};
+    fixs.forEach((item) => {
+        let [hr, min] = item["time"].trim().split(':');
+        hr = +hr * 3600000;
+        min = +min * 60000;
+        if (tstamp[0] == reqDate(item["date"], "tstamp") + hr + min) {
+            fix_ = item;
+        }
+    });
+    let edit = `<div class="top-fix">
+        <p class="next-fix">Next fixture</p><p class="all-fix" onclick="window.location.href = './fixtures/index.html'">All Fixtures &gt;&gt;</p>
+      </div>
+      <div class="mid-fix">
+        <p class="dated-fix">${reqDate(fix_["date"], "false")}</p>
+        <p class="league-fix">${fix_["league"]}</p>
+      </div>
+      <div class="bottom-fix">
+        <img alt="" src="${fix_["homeLogo"]}"/>
+        <div class="time-fix">${fix_["time"]}<br>VS</div>
+        <img alt="" src="${fix_["awayLogo"]}"/>
+      </div>
+      <div class="team-name-fix">
+        <p class="team-home-fix">${fix_["home"]}</p>
+        <p class="team-away-fix">${fix_["away"]}</p>
+      </div>`;
+    let showNewFix = document.getElementById('showNewFix');
+    showNewFix.innerHTML = edit;
+}
+function showLastFix(res=[]) {
+    if (res.length < 1) return;
+    
+    let tstamp = [];
+    results.forEach((item) => {
+        let [hr, min] = item["time"].trim().split(':');
+        hr = +hr * 3600000;
+        min = +min * 60000;
+        tstamp.push(reqDate(item["date"], "tstamp")+ hr + min);
+    });
+    tstamp = tstamp.sort((a,b) => {a+b});
+    //console.log(tstamp);
+    let res_ = {};
+    results.forEach((item) => {
+        let [hr, min] = item["time"].trim().split(':');
+        hr = +hr * 3600000;
+        min = +min * 60000;
+        if (reqDate(item["date"], "tstamp") + hr + min === tstamp[tstamp.length - 1]) {
+            res_ = item;
+            //console.log(reqDate(item["date"], "tstamp") + hr + min);
+        }
+    });
+    let edit = `<div class="top-fix">
+        <p class="next-fix">Latest Result</p><p class="all-fix" onclick="window.location.href='./results/index.html'">All Results &gt;&gt;</p>
+      </div>
+      <div class="mid-fix">
+        <p class="dated-fix">${reqDate(res_["date"], "false")}</p>
+        <p class="league-fix">${res_["league"]}</p>
+      </div>    
+      <div class="team-name-fix">
+        <p class="team-name-res">${res_["home"]}</p>
+        <p class="team-score">${res_["homeScore"]}</p>
+        <p class="team-score">${res_["awayScore"]}</p>
+        <p class="team-name-res">${res_["away"]}</p>
+      </div>`;
+    
+    let resField = document.getElementById('resField');
+    resField.innerHTML = edit;
+}
+
+window.document.addEventListener('DOMContentLoaded', () => {
+  showNew_(news);
+  showNextFixture(fixtures);
+  showLastFix(results);
+});
+</script>
+</body>
+</html>

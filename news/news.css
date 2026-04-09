@@ -1,0 +1,105 @@
+.card {
+  padding: 10px;
+  margin: 0;
+}
+
+.title- {
+  font-size: 1.999rem;
+  text-decoration: 4px solid underline;
+  padding: 14px 3px;
+}
+
+.news-card {
+  border-radius: 10px;
+  margin: 5%;
+  background-color: rgba(12,12,12,4%);
+  width: 90%;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.news-text {
+  font-size: 1.223rem;
+  font-family: "Arial", sans-serif;
+  white-space: pre-wrap;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  padding: 10px;
+}
+.news-card > img, .news-card > video {
+  width: 100%;
+  object-fit: cover;
+  object-position: 60% center;
+  border-radius: ;
+  max-height: 70vh;
+}
+
+.author-time {
+  color: grey;
+  font-family: normal;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: right;
+  padding: 5px;
+}
+
+.news-card > h3 {
+  font-size: 1.6rem;
+  padding: 10px;
+  text-align: left;
+}
+.search {
+  display: flex;
+  gap: 10px;
+}
+.search input {
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.search-icon {
+  display: inline-block;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  background-image: url('../res/icons/search.svg');
+  background-position: center center;
+  background-size: cover;
+}
+.suggestItem {
+  padding: 20px;
+  border-radius: 10px;
+}
+.suggestItem p {
+  background-color: rgba(12,12,12,12%);
+  margin: 5px 0;
+  padding:;
+  font-size: 1.3rem;
+  color: ;
+  display: flex;
+  border-radius: 5px;
+  gap: 8px;
+}
+.suggestId {
+  background-color: ;
+  color: slateblue;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.suggestTitle {
+  padding: 5px;
+  color: darkslateblue;
+  text-decoration: underline;
+  font-family: normal;
+  font-weight: 500;
+  font-size: 1.34225rem;
+}
+
+.no-results {
+  padding: 20px 10px;
+  text-align: center;
+  color: tomato;
+}
+

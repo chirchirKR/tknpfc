@@ -1,0 +1,49 @@
+.showcase-item {
+  border-radius: ;
+  background: ;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  border-right: 3.3px solid grey;
+}
+.item-img {
+  height: ;
+  width: 180px;
+  justify-self: center;
+}
+
+.specify-item {
+  padding: 10px;
+  font-size: 1.3rem;
+  color: slateblue;
+  background-color: ;
+}
+
+
+.bef-price, .now-price {
+  font-size: 1.5rem;
+  font-family: normal;
+  font-weight: 1000;
+  font-size: 1.8em;
+}
+.bef-price {
+  color: tomato;
+  font-size: 1.3rem;
+  text-decoration: line-through;
+  padding: 5px;
+  border-radius: 5px;
+  background: ;
+}
+.now-price {
+  color: ;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: ;
+  text-decoration: underline;
+}
+.direct-photo {
+  width: 90%;
+  margin: 10px;
+  height: inherit;
+}

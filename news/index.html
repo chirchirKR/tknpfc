@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Kericho Poly FC • News</title>
+  <meta charset="utf-8"/>
+  <meta name="author" content="kym tye"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../styles/style.css"/>
+  <link rel="stylesheet" href="news.css"/>
+  <script type="text/javascript" src="../scripts/script.js"></script>
+  <!--script type="text/javascript" src="../scripts/_news.js"></script-->
+  <script type="text/javascript" src="../datas/news.js"></script>
+  <script type="text/javascript" src="./script-news.js"></script>
+  <script>
+  news_ = news;
+  </script>
+</head>
+<body>
+  <section class="top-header">
+    <div class="menu-icon" onclick="showMenu()"></div>
+    <div>
+      <h1>KERICHO POLY FC</h1>
+    </div>
+  </section>
+  <section class="drop-down">
+    <div class="drop-down-list">
+      <p onclick="locateMe(this.innerText)">Home</p>
+      <p onclick="locateMe(this.innerText)">News</p>
+      <p onclick="locateMe(this.innerText)">Fixtures</p>
+      <p onclick="locateMe(this.innerText)">Results</p>
+      <p onclick="locateMe(this.innerText)">Players</p>
+      <p onclick="locateMe(this.innerText)">Market</p>
+      <p onclick="locateMe(this.innerText)">About</p>
+      <!--p onclick="locateMe(this.innerText)">Contacts</p-->
+    </div>
+  </section>
+  <section class="search card">
+    <input type="search" oninput="search(this.value)" placeholder="Type :"/>
+    <div class="search-icon"></div>
+  </section>
+  <section class="suggestBox">
+    <!--div class="suggestItem">
+      <p><span class="suggestId">Derixk:4876</span><span class="suggestTitle">What a win Bt Mekkw</span></p>
+    </div-->
+  </section>
+  <hr>
+  <section class="news-sec card" id="newsField">
+    <!--h2 class="title-">NEWS</h2>
+    <div class="news-card">
+      <img alt="" src="../res/imgs/team.jpg"/>
+      <h3>What a tramendous win...<a href="">See more</a></h3>
+      <p class="author-time">Kym Tye … 17 Jan 2026</p>
+    </div-->
+  </section>
+<section class="image-section">
+  
+    <!-- Mozzart Advert Overlay -->
+    <div class="advert-overlay active" id="advert">
+        <div class="logo"><img height="30" width="30" src="" onerror="this.style.display='none'"/>TKNP</div>
+        <!--div class="spinner"></div-->
+        <div class="loading">Sponsored By THE KERICHO NATIONAL POLYTECHNIC</div>
+    </div>
+
+</section>
+  
+  <section class="footer-sec">
+    <!--h1>About</h1>
+    <h2>Contact Us</h2-->
+    <h2 onclick="locateMe('About')">About</h2>
+    <h2 onclick="locateMe('news')">More News</h2>
+    <h2 onclick="locateMe('results')">Results</h2>
+    <h2 onclick="locateMe('fixtures')">Fixtures</h2>
+    <h2 onclick="locateMe('players')">Explore Our Team</h2>
+    <h2 onclick="locateMe('market')">Market</h2>
+    <!--hr>
+    <div class="nav-list">
+      <img src="../res/icons/fb.png" onclick="href('https://www.facebook.com/apsbometfc')"><img src="../res/icons/ig.png" onclick="href('https://www.instagram.com/a.p.sbometfc?igsh=MXNkeDd5eWpqZjhreg==')"/>
+    </div-->
+    <hr>    
+    <p>&copy; 2026 • All Rights Reserved</p>
+  </section>
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</body>
+</html>
