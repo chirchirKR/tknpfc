@@ -84,7 +84,7 @@ var players = [
     "playing": "substitute"
   },
     { 
-    "name": "Brian Kipkemoi",
+    "name": "Brian Kipkemoi Chepkosiom",
     "jersey": 9,
     "pos": "Forward",
     "playing": "starter"
@@ -96,4 +96,4 @@ var players = [
     "playing": "substitute"
   }];
 
-var startxi = ["Matasi","Ignitius","Amad","Anderson","Eugoo","Gasper(Dogo)","Bismack","Mola","Brian(Chepkosiom)","Humphrey(Bull)","Pngeno"]
+var startxi = ["Matasi","Ignitius","Amad","Anderson","Eugoo","Dogo","Bismack","Mola","Chepkosiom","Bull","Pngeno"]
