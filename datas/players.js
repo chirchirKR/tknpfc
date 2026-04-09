@@ -83,11 +83,17 @@ var players = [
     "pos": "Forward",
     "playing": "substitute"
   },
-  { 
-    "name": "Vincent Chirchir Vinnie",
+    { 
+    "name": "Brian Kipkemoi",
     "jersey": 9,
     "pos": "Forward",
     "playing": "starter"
+    },
+  { 
+    "name": "Vincent Chirchir Vinnie",
+    "jersey": 22,
+    "pos": "Forward",
+    "playing": "substitute"
   }];
 
-var startxi = ["Matasi","Ignitius","Amad","Anderson","Eugoo","Gasper(Dogo)","Bismack","Mola","Vincent","Humphrey(Bull)","Pngeno"]
+var startxi = ["Matasi","Ignitius","Amad","Anderson","Eugoo","Gasper(Dogo)","Bismack","Mola","Brian(Chepkosiom)","Humphrey(Bull)","Pngeno"]
